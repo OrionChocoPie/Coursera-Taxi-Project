@@ -1,2 +1,7 @@
 /.ipynb_checkpoints
 /data/*
+/.vscode
+/notebooks/foreign/
+!/data/original.csv
+!/data/regions.csv
+!/data/submit.csv
