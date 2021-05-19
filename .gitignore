@@ -1,6 +1,6 @@
-/.ipynb_checkpoints
+.ipynb_checkpoints
 /data/*
-/.vscode
+.vscode
 /notebooks/foreign/
 !/data/original.csv
 !/data/regions.csv

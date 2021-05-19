@@ -4,20 +4,8 @@ services:
     build: ./app/docker/python/
     volumes:
       - .:/root
-    # command: python debugging.py # debug
     command: gunicorn -w 4 --timeout 120 -b 0.0.0.0:8050 app.app:server # deploy
     environment:
       - PYTHONUNBUFFERED=True
     ports:
       - 8052:8050
-#   db:
-#     image: postgres
-#     restart: always
-#     volumes:
-#       - pgdata:/var/lib/postgresql/data
-#     environment:
-#       - POSTGRES_PASSWORD=password
-#     ports:
-#       - 5432:5432
-# volumes: 
-#     pgdata:
